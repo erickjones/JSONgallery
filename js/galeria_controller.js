@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$.getJSON(
-		'js/galeria_JSON.js',
+		'js/galeria_JSON.json',
 		function(data) {
 
 			var gal = [];
