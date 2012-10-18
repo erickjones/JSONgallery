@@ -59,8 +59,8 @@ $(document).ready(function(){
 
     //Hovering arrows
 	$("#rightArrow, #leftArrow").hover(function(){
-		$(this).animate({ opacity: "0.8" }, 300);
+		$(this).stop().animate({ opacity: "0.8" }, 300);
 	}, function() {
-		$(this).animate({ opacity: "0.5" }, 300);
+		$(this).stop().animate({ opacity: "0.5" }, 300);
 	});
 });
