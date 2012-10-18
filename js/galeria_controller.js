@@ -15,14 +15,17 @@ $(document).ready(function(){
 
 			}
 
-			theImage.css("display", "none");
-	  		theImage.attr("src", gal[counter][0]);
-	  		theImage.fadeIn(500);
+	  		function changeImageAndCaption(){
+	  			theImage.css("display", "none");
+		  		theImage.attr("src", gal[counter][0]);
+		  		theImage.fadeIn(500);
 
-	  		theCaption.css("display", "none");
-	  		theCaption.html(gal[counter][1]);
-	  		theCaption.fadeIn(500);
-	  		
+		  		theCaption.css("display", "none");
+		  		theCaption.html(gal[counter][1]);
+		  		theCaption.fadeIn(500);
+	  		}
+
+	  		changeImageAndCaption();
 
 			$("#rightArrow").click(function() {
 
@@ -35,13 +38,7 @@ $(document).ready(function(){
 		  			counter = 0;
 		  		}
 
-		  		theImage.css("display", "none");
-		  		theImage.attr("src", gal[counter][0]);
-		  		theImage.fadeIn(500);
-
-		  		theCaption.css("display", "none");
-		  		theCaption.html(gal[counter][1]);
-		  		theCaption.fadeIn(500);
+		  		changeImageAndCaption();
 		  		
 			});
 
