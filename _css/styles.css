@@ -7,22 +7,25 @@
 #leftArrow, #rightArrow{
 	width: 50px;
 	height: 50px;
-	background-color:red;
 	position: relative;
 	top: 50%;
 	margin-top: -25px;
 	cursor: pointer;
-	z-index: 1;
 	float: right;
 	margin-right: 10px;
+
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 
 #imageBox {
 	width: 500px;
 	height: 333px;
+	overflow: hidden;
 }
 
 #captionBox {
+	background-image: url(../_img/bgCaption.png);
 	height: 80px;
 	position:relative;
 	margin-top: -80px;
@@ -31,18 +34,9 @@
 	
 }
 
-#bg {
-	background-color: black;
-	opacity: 0.5;
-	height: 80px;
-	position:relative;
-	margin-top: -60px;
-}
-
 #captionBox p{
-	color: white;
+	color: #fff;
 	margin-left: 10px;
 	font-family: arial, sans-serif;
 	font-size: 14px;
 }
-
