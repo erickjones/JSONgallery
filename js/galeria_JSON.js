@@ -3,22 +3,22 @@
    
    {
       "picture" : {
-         "image":"pictures/bola1.jpg",
-         "_caption":"Lorem Ipsum Dolor sit amet 1"
+         "image":"pictures/image1.jpg",
+         "_caption":"Rio Movie"
       }
    },
 
    {
       "picture" : {
-         "image":"pictures/bola2.jpg",
-         "_caption":"Lorem Ipsum Dolor sit amet 2"
+         "image":"pictures/image2.jpg",
+         "_caption":"Surfing penguins"
       }
    },
 
    {
       "picture" : {
-         "image":"pictures/bola3.jpg",
-         "_caption":"Lorem Ipsum Dolor sit amet 3"
+         "image":"pictures/image3.jpg",
+         "_caption":"Kung Fu Panda"
       }
    }
    

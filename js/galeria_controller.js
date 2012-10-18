@@ -6,6 +6,8 @@ $(document).ready(function(){
 
 			var gal = [];
 			var counter = 0;
+			var theImage = $("#galleryWrapper #imageBox").find("img");
+		  	var theCaption = $("#galleryWrapper").find("#captionBox p");
 
 			for(i=0; i < data.gallery.length; i++){
 
@@ -13,10 +15,19 @@ $(document).ready(function(){
 
 			}
 
+			theImage.css("display", "none");
+	  		theImage.attr("src", gal[counter][0]);
+	  		theImage.fadeIn(500);
+
+	  		theCaption.css("display", "none");
+	  		theCaption.html(gal[counter][1]);
+	  		theCaption.fadeIn(500);
+	  		
+
 			$("#rightArrow").click(function() {
 
-		  		var theImage = $("#galleryWrapper #imageBox").find("img");
-		  		var theCaption = $("#galleryWrapper").find("#captionBox p");
+		  		// var theImage = $("#galleryWrapper #imageBox").find("img");
+		  		// var theCaption = $("#galleryWrapper").find("#captionBox p");
 
 		  		if(counter < gal.length-1){
 		  			counter++;
