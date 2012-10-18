@@ -1,4 +1,4 @@
-JSONgallery w/ JQuery
+<h2>JSONgallery w/ JQuery</h2>
 	
 This image gallery is crossBrowser - [feel free to notify about any browser incompatibilities]
 
