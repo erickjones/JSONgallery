@@ -57,7 +57,7 @@ $(document).ready(function(){
 
 	);
 
-    //Hovering images
+    //Hovering arrows
 	$("#rightArrow, #leftArrow").hover(function(){
 		$(this).animate({ opacity: "0.8" }, 300);
 	}, function() {
