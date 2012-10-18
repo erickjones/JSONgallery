@@ -29,9 +29,6 @@ $(document).ready(function(){
 
 			$("#rightArrow").click(function() {
 
-		  		// var theImage = $("#galleryWrapper #imageBox").find("img");
-		  		// var theCaption = $("#galleryWrapper").find("#captionBox p");
-
 		  		if(counter < gal.length-1){
 		  			counter++;
 		  		} else {
@@ -43,9 +40,6 @@ $(document).ready(function(){
 			});
 
 			$("#leftArrow").click(function() {
-
-		  		var theImage = $("#galleryWrapper #imageBox").find("img");
-		  		var theCaption = $("#galleryWrapper").find("#captionBox p");
 
 		  		if(counter == 0){
 		  			counter = gal.length-1;
