@@ -9,6 +9,9 @@ $(document).ready(function(){
 			var counter = 0;
 			var theImage = $("#galleryWrapper #imageBox").find("img");
 		  	var theCaption = $("#galleryWrapper").find("#captionBox p");
+		  	var timer = $(".timer");
+		  	var speed = 8000;
+		  	var slideInterval;
 
 			for(i=0; i < data.gallery.length; i++){
 
@@ -28,6 +31,13 @@ $(document).ready(function(){
 	  		}
 	  		changeImageAndCaption();
 
+            // set timer to zero then animates it again
+	  		function zeraTimer(){
+				console.log("timerZerado");
+				timer.css({"width" : "0px"}).stop().animate({ width: "100%" }, speed);
+			}
+			zeraTimer();
+
 	  		//Right arrow controller
 			$("#rightArrow").click(function() {
 
@@ -37,6 +47,9 @@ $(document).ready(function(){
 		  			counter = 0;
 		  		}
 
+		  		zeraTimer();
+		  		clearInterval(slideInterval);
+		  		slideShow();
 		  		changeImageAndCaption();
 		  		
 			});
@@ -50,9 +63,30 @@ $(document).ready(function(){
 		  			counter --;
 		  		}
 
+		  		zeraTimer();
+		  		clearInterval(slideInterval);
+		  		slideShow();
 		  		changeImageAndCaption();
 		  		
 			});
+
+			//SlideShow Timer
+			function slideShow(){
+
+				slideInterval = setInterval(function(){
+					if(counter < gal.length-1){
+		  				counter++;
+			  		} else {
+			  			counter = 0;
+			  		}
+			  		
+			  		zeraTimer();
+			  		changeImageAndCaption();
+					
+				}, speed);
+			}
+
+			slideShow();
 		}
 
 	);

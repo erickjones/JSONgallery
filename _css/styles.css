@@ -32,6 +32,7 @@
 	width: 500px;
 	height: 333px;
 	overflow: hidden;
+	margin-top: -3px;
 }
 
 #captionBox {
@@ -49,4 +50,11 @@
 	margin-left: 10px;
 	font-family: arial, sans-serif;
 	font-size: 14px;
+}
+
+.timer {
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background-color: #ff0000;
 }
