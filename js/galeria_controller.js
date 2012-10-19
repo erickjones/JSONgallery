@@ -1,3 +1,12 @@
+/*
+
+Erick Jones
+erick.jones@gmail.com
+https://github.com/erickjones
+www.erickjones.com.br
+
+*/
+
 $(document).ready(function(){
 
 	//Get my JSON data please
