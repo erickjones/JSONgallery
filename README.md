@@ -1,6 +1,5 @@
 <h2>JSONgallery w/ JQuery</h2>
 <br>
-
 <b>You need to check it in your localHost.</b>
 
 This image gallery is crossBrowser - [feel free to notify about any browser incompatibilities]
