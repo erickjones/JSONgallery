@@ -6,4 +6,6 @@ I used jQuery getJSON method to catch it and stored in an Array. Then when the u
 
 Also when user mouseOver the arrows buttons, it dispatches the animation in button's css.
 
+<b>Now with slideShow and a timer to indicate when the picture will change.</b>
+
 Feel free to fork it.
