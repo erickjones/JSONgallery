@@ -33,7 +33,6 @@ $(document).ready(function(){
 
             // set timer to zero then animates it again
 	  		function zeraTimer(){
-				console.log("timerZerado");
 				timer.css({"width" : "0px"}).stop().animate({ width: "100%" }, speed);
 			}
 			zeraTimer();
