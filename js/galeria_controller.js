@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	//Get my JSON data please
 	$.getJSON(
-		'js/galeria_JSON.js',
+		'js/galeria_JSON.json',
 		function(data) {
 
 			var gal = [];
